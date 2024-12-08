@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+    body {
+      font-family: Georgia, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-image: url("image/background\ homepage2.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      text-align: center;
+    }
+
+   /* Back Button Styling */
+   .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #92A8D1;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: silver;
+    }
+
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #c1cbd3, #cdcacd);
+    color: black;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  .intro {
+      font-size: 16px;
+      color: #555;
+      margin: 20px 0;
+      padding: 0 20px; 
+  }
+
+  .grid {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap; 
+      padding: 20px;
+  }
+
+  .card {
+      position: relative;
+      flex: 1 1 30%; 
+      max-width: 30%;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  .overlay {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+      pointer-events: none;
+  }
+
+  /* Make it responsive */
+    @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; 
+      max-width: 100%;
+    }
+
+    .grid {
+      gap: 10px;
+    }
+  }
+
+</style>
+
+
+<body>
+
+<!-- Back Button -->
+<a href="HOMEPAGE.html" class="back-button">← Back</a>
+
+<!-- Header Section -->
+<header>
+  <h1>Gallery</h1>
+  <p>This is my gallery section. Feel free to see each of them! </p>
+</header>
+
+<div class="grid">
+  <div class="card">
+      <a href="food.html" target="_blank">
+      <img src="Image/gambar makanan (makii).jpg" alt="Food">
+      <div class="overlay">Food</div>
+  </div>
+
+  <div class="card">
+      <a href="sketch.html" target="_blank">
+      <img src="Image/sketch 1.jpg" alt="Sketch">
+      <div class="overlay">Sketch</div>
+  </div>
+
+  <div class="card">
+      <a href="others.html" target="_blank">
+      <img src="Image/others 3.jpg" alt="Others">
+      <div class="overlay">Others</div>
+  </div>
+</div>
+</body>
+</html>

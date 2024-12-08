@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url("image/background\ homepage2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(215, 214, 214);
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        nav ul li {
+            float: left;
+        }
+        
+        nav ul li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Centered Content */
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            text-align: center;
+        }
+
+        .center-content h1 {
+            font-size: 3rem;
+            color: #333;
+            background: rgba(255, 255, 255, 0.317); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            display: flex;
+            max-width: 2000px;
+            width: 100%;
+            background-color: #e8e1f2; 
+        }
+
+        .image-section img {
+            width: 330px;
+            height: auto;
+            padding: 50px;
+            border-radius: 8px;
+        }
+
+        .text-section {
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-section h1 {
+            font-size: 60px;
+            line-height: 1.2;
+            margin: 0;
+            color: #000000; 
+        }
+
+        .text-section h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000000;
+        }
+
+    /* Contact and Social Media Section */
+    .contact-section {
+      background-color: #e2d4f0; 
+      padding: 10px 10px;
+      margin-top: 400px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .social-media-icons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .icon {
+      width: 40px;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: transform 0.3s;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+    }
+    </style>  
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="familynfriends.html">Family&Friends</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Centered Content -->
+    <section class="center-content">
+        <h1>Welcome to My Website</h1>
+    </section>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="Image/Gambar Azwa 2.jpg" alt="Azwa's Picture">
+        </div>
+        <div class="text-section">
+            <h1>Hello!</h1>
+            <h2>Welcome to my personal website.</h2>
+            <p>My name is Nur Aizatul Azwa binti Rahim, and I am currently pursuing a Diploma in Information Management at UiTM Rembau Campus. This website has been developed as part of my coursework for the subject Web Content Management & Design (IMD 318). 
+              Here, you will find a showcase of my reflections on web content management, and the skills I’ve gained throughout my studies.  Thank you for visiting, and I hope you enjoy exploring my work!</p>
+        </div>
+    </div>
+
+  <!-- Contact and Social Media Section -->
+  <section class="contact-section" id="contact">
+    <p>My Social Media</p>
+    <div class="social-media-icons">
+      <a href="https://www.facebook.com/profile.php?id=61559017985729" target="_blank">
+        <img src="Image/facebook logo png.png" alt="Facebook" class="icon">
+      </a>
+      <a href="https://www.instagram.com/aiztlazwa/" target="_blank">
+        <img src="Image/instagram logo png.png" alt="Instagram" class="icon">
+      </a>
+      <a href="https://www.tiktok.com/@aiztlazwa?lang=en" target="_blank">
+        <img src="Image/tiktok logo png.png" alt="TikTok" class="icon">
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>

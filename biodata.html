@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+
+   /* Back Button Styling */
+   .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #92A8D1;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color:silver;
+    }
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #c1cbd3, #cdcacd);
+    color: black;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+   /* Gallery Section */
+   .gallery-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 32px;
+      color: #000000; 
+      margin-bottom: 20px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.306);
+      border-top: 5px solid #c1b7c3;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000000;
+      display: inline-block;
+    }
+
+    .audio-container {
+      text-align: left;
+       margin-top: 20px;
+    }
+
+    audio {
+      width: 300px;
+    }
+
+    audio {
+      border: 2px solid #6a7a83a4;
+      border-radius: 10px;
+      background-color: #F8F9FA;
+      padding: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.287);
+    }
+  </style>
+
+<body>
+
+  <!-- Back Button -->
+  <a href="HOMEPAGE.html" class="back-button">← Back</a>
+
+<!-- Header Section -->
+<header>
+    <h1>Biodata</h1>
+    <p>This is my biodata section. A little information about me ! </p>
+  </header>
+
+ <!-- Gallery Section -->
+ <section class="gallery-section" id="gallery">
+    <h2>My Photo</h2>
+    <div class="gallery-container">
+      <img src="Image/gambar tadika.jpg" alt="Image 1" class="gallery-image">
+      <img src="image/Gambar sekolah 2.jpg" alt="Image 2" class="gallery-image">
+      <img src="image/Gambar azwa current(Sem5).jpg" alt="Image 3" class="gallery-image">
+    </div>
+  </section>
+
+<!-- Personal Details Section -->
+<section id="personal-details">
+  <h2>Personal Details</h2>
+  <ul>
+    <li><strong>Full Name:</strong> Nur Aizatul Azwa binti Rahim</li>
+    <li><strong>Age:</strong> I'm 20 years old</li>
+    <li><strong>Date of Birth:</strong> 7 December 2004</li>
+    <li><strong>Hometown:</strong> Semenyih, Selangor</li>
+    <li><strong>Number of Siblings:</strong> I have 4 siblings and I'm the youngest</li>
+  </ul>
+</section>
+
+<!-- Hobbies and Interests Section -->
+<section id="hobbies">
+  <h2>Hobbies and Interests</h2>
+  <p>
+    Outside of my studies, I love spending time doing things that bring me joy:
+  </p>
+  <ul>
+    <li>I like to draw, spent time alone and create something meaningful. </li>
+    <li>I also do some crocheting and embroidering.</li>
+    <li>In my free time, I enjoy reading books.</li>
+  </ul>
+</section>
+
+<!-- Fvourite Things Section -->
+<section id="favourites">
+  <h2>Favourite Things</h2>
+  <ul>
+    <li>Strawberry and cheesecake are my favourite foods</li>
+    <li>My favourite animal goes to hamster, raccoon and otter</li>
+    <li>My favourite color is soft green, brown and black </li>
+    <li>I also like mini figure such as hirono and skullpanda</li>
+    <li>My favourite song genre is rnb, k-pop, k-hiphop and soft indie </li>
+    <div class="audio-container">
+      <audio controls>
+          <source src="Audio/Matt Maltese - Philadelphia (with Searows) [Official Video].mp3" type="audio/mpeg">
+          <source src="example-audio.ogg" type="audio/ogg">
+      </audio>
+  </div>
+
+</body>
+
+</body>
+</html>

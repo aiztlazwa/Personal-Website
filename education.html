@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+
+   /* Back Button Styling */
+   .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #92A8D1;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: silver;
+    }
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #c1cbd3, #cdcacd);
+    color: black;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  
+   /* Gallery Section */
+   .gallery-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 32px;
+      color: #000000; 
+      margin-bottom: 20px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-image {
+      width: 30%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+  section {
+      text-align: center;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.371);
+      border-top: 5px solid #c1b7c3;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000000;
+      display: inline-block;
+    }
+
+  </style>
+
+  <body>
+
+        <!-- Back Button -->
+        <a href="HOMEPAGE.html" class="back-button">← Back</a>
+      
+      <!-- Header Section -->
+      <header>
+          <h1>Education</h1>
+          <p>This is my education througout my life including primary school, high school and currently in university</p>
+        </header>
+      
+      <!-- Educations Section -->
+      <section id="education-details">
+        <h2>Primary School</h2>
+          <ul>
+              <!-- Gallery Section -->
+              <div class="gallery">
+                <img src="Image/skus logo.png" alt="SKUS" class="gallery">
+              </div>
+              <li><strong>Full Name:</strong> Sekolah Kebangsaan Ulu Semenyih</li>
+              <li><strong>Location:</strong> Jalan Sg. Lalang, Semenyih, Selangor</li>
+          </ul>
+      </section>
+
+      <!-- Educations Section -->
+      <section id="education-details">
+        <h2>High School</h2>
+          <ul>
+              <!-- Gallery Section -->
+              <div class="gallery">
+                <img src="Image/smkeh logo.png" alt="SMKEH" class="gallery">
+              </div>
+              <li><strong>Full Name:</strong> Sekolah Kebangsaan Engku Husain</li>
+              <li><strong>Location:</strong> Kampung Baru, Semenyih, Selangor</li>
+          </ul>
+      </section>
+      
+      <!-- Educations Section -->
+      <section id="education-details">
+        <h2>University</h2>
+          <ul>
+              <!-- Gallery Section -->
+              <div class="gallery">
+                <img src="Image/logo uitm.png" alt="UiTM" class="gallery">
+              </div>
+              <li><strong>Full Name:</strong> Universiti Teknologi MARA</li>
+              <li><strong>Location:</strong> Jalan, Kampung Pilin, 71300 Rembau, Negeri Sembilan</li>
+          </ul>
+      </section>
+  </body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+
+    /* Back Button Styling */
+   .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #92A8D1;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: silver;
+    }
+    
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(to right, #c1cbd3, #cdcacd);
+        color: black;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    /* Image Card Styles */
+    .image-card {
+        text-align: center;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .image-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-card p {
+        padding: 10px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* Video Card Styles */
+.video-card {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit; 
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd; 
+}
+
+.video-card p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    margin: 10; 
+}
+
+
+    /* Fullscreen Image Styles */
+    .fullscreen {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .fullscreen img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    /* Targeted Fullscreen Display */
+    .fullscreen:target {
+        display: flex;
+    }
+
+    /* Close Button */
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* Fullscreen Video Styles */
+    .fullscreen {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9); 
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    /* Fullscreen Video Element */
+    .fullscreen video {
+        max-width: 90%; 
+        max-height: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Show Fullscreen When Targeted */
+    .fullscreen:target {
+        display: flex; 
+    }
+
+    /* Close Button */
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section {
+        text-align: center;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1000px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.374);
+      border-top: 5px solid #c1b7c3;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000000;
+      display: inline-block;
+    }
+</style>
+
+<body>
+
+    <!-- Back Button -->
+        <a href="HOMEPAGE.html" class="back-button">← Back</a>
+
+    <!-- Header Section -->
+        <header>
+            <h1>Experience</h1>
+            <p>This is a little experience throughout my life. </p>
+        </header>
+
+    <!-- Experiences Section -->
+        <section id="Internship Experience">
+            <h2>Internship</h2>
+            <p>This is my experience during my two-month industrial training at Universiti Kebangsaan Malaysia (UKM). I was assigned to the Registrar Department, where I gained a wealth of new knowledge and experiences.  My time at UKM was incredibly rewarding, and I am grateful for the chance to contribute and grow during this internship.</p>
+
+            <div class="gallery">
+                <a href="#img1" class="image-card">
+                    <img src="Image/experience intern 1.jpg" alt="Experience Intern 1">
+                    <p> Conversation with UKM's vice chancellor during the MADANI Post-Normal Era Exhibition</p>
+                </a>
+                <a href="#img2" class="image-card">
+                    <img src="Image/experience intern 2.jpg" alt="Experience Intern 2">
+                    <p>My picture with the UKM logo</p>
+                </a>
+                <a href="#img3" class="image-card">
+                    <img src="Image/experience intern 3.jpg" alt="Experience Intern 3">
+                    <p>Image with supervisor at the industrial training and the supervisor lecturer during the assess day.
+                    </p>
+                </a>
+                <a href="#img4" class="image-card">
+                    <img src="Image/experience intern 5.jpg" alt="Experience Intern 4">
+                    <p>Picture of me checking the file for the appraisal and disposal process</p>
+                </a>
+                <a href="#img5" class="image-card">
+                    <img src="Image/experience intern 7.jpg" alt="Experience Intern 5">
+                    <p>Picture of my last day in the file room of registrar's department</p>
+                </a>
+
+                <!-- Video Card -->
+                <div class="video-card">
+                    <video controls>
+                        <source src="Video/experience intern 6.mp4" type="video/mp4">
+                    </video>
+                    <p>Video during the Merdeka Day celebration with staff from other departments</p>
+                </div>
+                
+            </div>
+        </section>
+        
+            <!-- Fullscreen Image Display -->
+            <div id="img1" class="fullscreen">
+                <a href="#" class="close">X</a>
+                <img src="Image/experience intern 1.jpg" alt="Experience Intern 1">
+            </div>
+        
+            <div id="img2" class="fullscreen">
+                <a href="#" class="close">X</a>
+                <img src="Image/experience intern 2.jpg" alt="Experience Intern 2">
+            </div>
+        
+            <div id="img3" class="fullscreen">
+                <a href="#" class="close">X</a>
+                <img src="Image/experience intern 3.jpg" alt="Experience Intern 3">
+            </div>
+
+            <div id="img4" class="fullscreen">
+                <a href="#" class="close">X</a>
+                <img src="Image/experience intern 5.jpg" alt="Experience Intern 4">
+            </div>
+
+            <div id="img5" class="fullscreen">
+                <a href="#" class="close">X</a>
+                <img src="Image/experience intern 7.jpg" alt="Experience Intern 5">
+            </div>
+
+
+    <!-- Experiences Section -->
+     <section id="Brassband & Colorguard Experience">
+        <h2>Brassband & Colorguard</h2>
+        <p>Participating in the brassband and color guard at university has been an enriching experience that allowed me to gain valuable knowledge and skills. I learned to play a musical instrument from scratch, mastering techniques and understanding the intricacies of reading and interpreting music notes. Beyond music, I developed proficiency in color guard performance, particularly the art of using flags to convey emotion and enhance visual storytelling during routines. These activities not only honed my technical abilities but also strengthened my discipline, teamwork, and creativity.</p>
+
+        <div class="gallery">
+            <a href="#img6" class="image-card">
+                <img src="Image/experience brassband 1.jpg" alt="Experience Brassband & Colorguard 1">
+                <p>The instrument I learned and used throughout the brassband was the bass drum</p>
+            </a>
+            <a href="#img7" class="image-card">
+                <img src="Image/experience colorguard 2.jpg" alt="Experience Brassband & Colorguard 2">
+                <p>My picture with the assigned colorguard group</p>
+            </a>
+            <a href="#img8" class="image-card">
+                <img src="Image/experience colorguard 3.jpg" alt="Experience Brassband & Colorguard 3">
+                <p>Picture of us participating in the colorguard camp to strengthen our skills</p>
+            </a>
+        </div>
+
+        <!-- Fullscreen Image Display -->
+        <div id="img6" class="fullscreen">
+            <a href="#" class="close">X</a>
+            <img src="Image/experience brassband 1.jpg" alt="Experience Brassband & Colorguard 1">
+        </div>
+    
+        <div id="img7" class="fullscreen">
+            <a href="#" class="close">X</a>
+            <img src="Image/experience colorguard 2.jpg" alt="Experience Brassband & Colorguard 2">
+        </div>
+    
+        <div id="img8" class="fullscreen">
+            <a href="#" class="close">X</a>
+            <img src="Image/experience colorguard 3.jpg" alt="Experience Brassband & Colorguard 3">
+        </div>
+    </section>
+
+     <!-- Experiences Section -->
+     <section id="Dean Award Experience">
+        <h2>Dean's Award</h2>
+        <p>During my time at university, I was honored to receive several Dean's Awards, which are given to selected students for their academic performance and dedication. These awards are the result of my semester-long dedication to hard work, dedication, and academic excellence. </p>
+
+        <div class="gallery">
+            <a href="#img9" class="image-card">
+                <img src="Image/Dean award experience 1.jpg" alt="Dean Award Experience 1">
+            </a>
+            <a href="#img10" class="image-card">
+                <img src="Image/Dean award experience 2.jpg" alt="Dean Award Experience 2">
+            </a>
+            <a href="#img11" class="image-card">
+                <img src="Image/Dean award experience 3.jpg" alt="Dean Award Experience 3">
+            </a>
+        </div>
+
+        <!-- Fullscreen Image Display -->
+        <div id="img9" class="fullscreen">
+            <a href="#" class="close">X</a>
+            <img src="Image/Dean award experience 1.jpg" alt="Dean Award Experience 1">
+        </div>
+    
+        <div id="img10" class="fullscreen">
+            <a href="#" class="close">X</a>
+            <img src="Image/Dean award experience 2.jpg" alt="Dean Award Experience 2">
+        </div>
+        <div id="img11" class="fullscreen">
+            <a href="#" class="close">X</a>
+            <img src="Image/Dean award experience 3.jpg" alt="Dean Award Experience 3">
+        </div>
+    </section>
+   
+</body>
+</html>
+
+
+
+
+ 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+     body {
+      font-family: Georgia, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #cfd6e2;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      text-align: center;
+    }
+
+   /* Back Button Styling */
+   .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #dfcee6;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: silver;
+    }
+
+     /* Gallery Section */
+   .gallery-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 32px;
+      color: #000000; 
+      margin-bottom: 20px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<body>
+
+    <!-- Back Button -->
+    <a href="gallery.html" class="back-button">← Back</a>
+
+     <!-- Gallery Section -->
+ <section class="gallery-section" id="gallery">
+    <h2>My Photo</h2>
+    <div class="gallery-container">
+      <img src="Image/sketch 1.jpg" alt="Image 1" class="gallery-image">
+      <img src="Image/sketch 3.jpg" alt="Image 3" class="gallery-image">
+      <img src="Image/sketch 4.jpg" alt="Image 4" class="gallery-image">
+      <img src="Image/sketch 5.jpg" alt="Image 5" class="gallery-image">
+      <img src="Image/sketch 6.jpg" alt="Image 6" class="gallery-image">
+    </div>
+  </section>
+</body>
+</html>

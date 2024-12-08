@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family & Friends</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+
+/* Back Button Styling */
+.back-button {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   text-decoration: none;
+   color: white;
+   background-color: #92A8D1;
+   padding: 10px 15px;
+   border-radius: 5px;
+   font-weight: bold;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s;
+ }
+
+ .back-button:hover {
+   background-color: silver;
+ }
+
+header {
+ text-align: center;
+ padding: 40px 20px;
+ background: linear-gradient(to right, #c1cbd3, #cdcacd);
+ color: black;
+}
+
+header h1 {
+ font-size: 2.5em;
+ margin: 0;
+}
+
+header p {
+ font-size: 1.2em;
+ margin-top: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+   padding: 40px 20px;
+   text-align: center;
+ }
+
+ .gallery-section h2 {
+   font-size: 32px;
+   color: #000000; 
+   margin-bottom: 20px;
+ }
+
+ .gallery-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   gap: 20px;
+ }
+
+ .gallery-image {
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+   transition: transform 0.3s, box-shadow 0.3s;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .gallery-image:hover {
+   transform: scale(1.05);
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+ }
+
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.367);
+      border-top: 5px solid #c1b7c3;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #000000;
+      display: inline-block;
+    }
+
+
+</style>
+
+<body>
+
+    <!-- Back Button -->
+    <a href="HOMEPAGE.html" class="back-button">← Back</a>
+  
+  <!-- Header Section -->
+  <header>
+      <h1>Family & Friends</h1>
+      <p>This is my Family & Friends section. Here are some pictures of them! </p>
+    </header>
+  
+   <!-- Gallery Section -->
+   <section class="gallery-section" id="gallery">
+      <h2>My Family</h2>
+      <p>This is my family. I have 4 siblings and total up as a 6 family members</p>
+      <div class="gallery-container">
+        <img src="Image/Family 1.jpg" alt="Image 1" class="gallery-image">
+        <img src="Image/Family 2.jpg" alt="Image 2" class="gallery-image">
+        <img src="Image/Family 4.jpg" alt="Image 3" class="gallery-image">
+        <img src="Image/Family 3.jpg" alt="Image 4" class="gallery-image">
+        <img src="Image/Family 7.jpg" alt="Image 5" class="gallery-image">
+        <img src="Image/Family 8.jpg" alt="Image 6" class="gallery-image">
+      </div>
+    </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <h2>My Friends</h2>
+    <p>This is the picture containing me and my friends</p>
+    <div class="gallery-container">
+      <img src="Image/Friends 1.jpg" alt="Image 1" class="gallery-image">
+      <img src="Image/Friends 2.jpg" alt="Image 2" class="gallery-image">
+      <img src="Image/Friends 6.jpg" alt="Image 3" class="gallery-image">
+      <img src="Image/Friends 4.jpg" alt="Image 4" class="gallery-image">
+      <img src="Image/Friends 3.jpg" alt="Image 5" class="gallery-image">
+      <img src="Image/Friends 5.jpg" alt="Image 6" class="gallery-image">
+    </div>
+  </section>
+
+</body>
+</html>
+
